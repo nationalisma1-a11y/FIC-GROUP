@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #14261a;
+
+  --color-brand-orange: #f26b21;
+  --color-brand-orange-dark: #d4571a;
+  --color-brand-orange-soft: #fff2ea;
+  --color-brand-green: #1e7a34;
+  --color-brand-green-dark: #14261a;
+  --color-brand-green-soft: #eef6f0;
+
+  --color-muted: #f4f6f4;
+  --color-muted-foreground: #5b6b60;
+  --color-border: #e3e8e3;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 1rem;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand-orange);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@keyframes fic-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fic-animate {
+  animation: fic-fade-up 0.6s ease-out both;
+}
