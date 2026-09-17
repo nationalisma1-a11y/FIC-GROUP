@@ -26,7 +26,7 @@ export function Footer() {
           </div>
           <p className="mt-5 max-w-md text-sm text-white/70">
             {siteConfig.legalName}. {siteConfig.tagline}. Foncier, immobilier et
-            climatisation réunis pour accompagner vos projets à Abidjan.
+            BTP et climatisation réunis pour accompagner vos projets à Abidjan.
           </p>
         </div>
 
@@ -60,6 +60,11 @@ export function Footer() {
               >
                 <Phone className="h-4 w-4 shrink-0" aria-hidden="true" />
                 {siteConfig.phonePrimaryDisplay}
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 text-white/70 transition-colors hover:text-brand-orange">
+                {siteConfig.email}
               </a>
             </li>
             <li>
@@ -97,7 +102,7 @@ export function Footer() {
           <p>
             © {year} {siteConfig.brand} ({siteConfig.legalForm}). Tous droits réservés.
           </p>
-          <p>Foncier · Immobilier · Climatisation — {siteConfig.city}</p>
+          <p>Foncier · Immobilier · BTP · Climatisation — {siteConfig.city}</p>
         </div>
       </div>
     </footer>

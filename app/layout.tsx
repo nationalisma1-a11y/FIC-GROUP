@@ -44,6 +44,10 @@ export const metadata: Metadata = {
     description: siteConfig.seo.description,
     images: ["/images/carte-de-visite-1.jpg"],
   },
+  icons: {
+    icon: "/images/logo-fic-group.jpg",
+    shortcut: "/images/logo-fic-group.jpg",
+  },
   robots: {
     index: true,
     follow: true,

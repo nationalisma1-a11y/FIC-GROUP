@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, type FormEvent } from "react"
-import { Phone, MessageCircle, MapPin, Send } from "lucide-react"
+import { Phone, MessageCircle, MapPin, Send, Mail } from "lucide-react"
 import { FacebookIcon } from "@/components/icons"
 import { buildWhatsAppLink, siteConfig } from "@/lib/site-config"
 import { SectionHeading } from "@/components/section-heading"
@@ -49,7 +49,12 @@ export function ContactSection() {
       icon: MapPin,
       label: "Adresse",
       value: siteConfig.addressLine,
-      note: !siteConfig.addressConfirmed ? "Adresse à confirmer" : undefined,
+    },
+    {
+      icon: Mail,
+      label: "E-mail",
+      value: siteConfig.email,
+      href: `mailto:${siteConfig.email}`,
     },
     {
       icon: FacebookIcon,
@@ -118,6 +123,14 @@ export function ContactSection() {
                 </div>
               )
             })}
+          </div>
+
+          <div className="overflow-hidden rounded-card border border-border bg-muted/40">
+            <iframe title="FIC GROUP SONGON sur Google Maps" src="https://www.google.com/maps?q=FIC%20GROUP%20SONGON%20Abidjan%20Carrefour%20Diapoté&output=embed" loading="lazy" className="h-72 w-full border-0" referrerPolicy="no-referrer-when-downgrade" />
+            <div className="flex flex-wrap gap-3 p-4">
+              <a href="https://maps.app.goo.gl/JmtzW3a2baKMX7Wd7" target="_blank" rel="noopener noreferrer" className="rounded-full bg-brand-green px-4 py-2 text-sm font-semibold text-white">Ouvrir dans Google Maps</a>
+              <a href="https://maps.app.goo.gl/JmtzW3a2baKMX7Wd7" target="_blank" rel="noopener noreferrer" className="rounded-full border border-brand-green/30 px-4 py-2 text-sm font-semibold text-brand-green">Itinéraire</a>
+            </div>
           </div>
 
           <form

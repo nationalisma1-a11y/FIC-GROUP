@@ -27,7 +27,7 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
         <div className="fic-animate flex flex-col justify-center">
           <span className="inline-flex w-fit items-center rounded-full border border-brand-orange/40 bg-brand-orange/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-brand-orange">
-            Foncier • Immobilier • Climatisation
+            Foncier • Immobilier • BTP • Climatisation
           </span>
 
           <h1 className="mt-6 text-balance text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">

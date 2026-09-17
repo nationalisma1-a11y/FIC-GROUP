@@ -64,7 +64,8 @@ export function Header() {
           </ul>
         </nav>
 
-        <div className="hidden items-center gap-2 lg:flex">
+        <div className="hidden items-center gap-3 lg:flex">
+          <a href={`mailto:${siteConfig.email}`} className="text-sm font-medium text-foreground/70 hover:text-brand-green">{siteConfig.email}</a>
           <a
             href={whatsappLink}
             target="_blank"

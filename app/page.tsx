@@ -15,19 +15,23 @@ export default function HomePage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: siteConfig.legalName,
-    alternateName: siteConfig.brand,
+    name: siteConfig.brand,
+    alternateName: siteConfig.legalName,
     slogan: siteConfig.tagline,
     description: siteConfig.seo.description,
     telephone: siteConfig.phonePrimary,
+    email: siteConfig.email,
+    url: siteConfig.url,
+    sameAs: ["https://maps.app.goo.gl/JmtzW3a2baKMX7Wd7"],
     areaServed: `${siteConfig.city}, ${siteConfig.country}`,
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Songon, Carrefour Diapoté",
       addressLocality: siteConfig.city,
       addressRegion: siteConfig.region,
       addressCountry: "CI",
     },
-    knowsAbout: ["Foncier", "Immobilier", "Climatisation"],
+    knowsAbout: ["Foncier", "Immobilier", "BTP", "Climatisation"],
   }
 
   return (

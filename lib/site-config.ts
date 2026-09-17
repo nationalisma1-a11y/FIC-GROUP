@@ -10,31 +10,25 @@ export const siteConfig = {
   legalName: "FONCIER IMMOBILIER CLIMATISATION GROUP",
   legalForm: "SARLU",
   tagline: "Votre partenaire de confiance",
-  promise: "Foncier. Immobilier. Climatisation. Un seul partenaire à Abidjan.",
+  promise: "Foncier. Immobilier. BTP. Climatisation. Un seul partenaire à Abidjan.",
   supporting: "Expertise, engagement et proximité, du terrain à la maison.",
 
-  // Primary phone (pivot) — sourced from the official business card.
-  phonePrimary: "+2250700045073",
-  phonePrimaryDisplay: "07 00 04 50 73",
-  phoneSecondary: "+2250757665859",
-  phoneSecondaryDisplay: "07 57 66 58 59",
+  phonePrimary: "+2250703530343",
+  phonePrimaryDisplay: "+225 07 03 53 03 43",
+  phoneSecondary: "+2252731949849",
+  phoneSecondaryDisplay: "+225 27 31 94 98 49",
   phoneLandline: "+2252731949849",
-  phoneLandlineDisplay: "27 31 94 98 49",
-
-  // WhatsApp number (international format, digits only) — pending final confirmation.
-  whatsappNumber: "2250700045073",
-
-  // Commercial address — final address still to be confirmed by FIC GROUP.
-  addressLine: "Abidjan — Songon, Carrefour Diapote",
-  addressConfirmed: false,
+  phoneLandlineDisplay: "+225 27 31 94 98 49",
+  whatsappNumber: "2250703530343",
+  addressLine: "FIC GROUP SONGON — Abidjan, Songon, Carrefour Diapoté, Côte d'Ivoire",
+  addressConfirmed: true,
 
   // Social — Facebook page URL awaiting the definitive link.
   facebookUrl: "https://www.facebook.com/",
   facebookConfirmed: false,
 
-  // Email — awaiting confirmation.
-  email: "",
-  emailConfirmed: false,
+  email: "ficgroup25@gmail.com",
+  emailConfirmed: true,
 
   // Legal registration — display only if confirmed.
   rccm: "",
@@ -43,13 +37,12 @@ export const siteConfig = {
   city: "Abidjan",
   region: "Songon",
   country: "Côte d'Ivoire",
-
-  url: "https://fic-group.com",
+  url: "https://fic-group.vercel.app",
 
   seo: {
-    title: "FIC GROUP — Foncier, Immobilier & Climatisation à Abidjan",
+    title: "FIC GROUP — Foncier, Immobilier, BTP & Climatisation à Abidjan",
     description:
-      "FIC GROUP accompagne particuliers et entreprises à Abidjan pour la sécurisation de terrains, l'immobilier et la climatisation. Contactez-nous.",
+      "FIC GROUP — Foncier, Immobilier, BTP et Climatisation à Abidjan (Songon, Carrefour Diapoté). Bornage, lotissement, construction, gestion locative, climatisation. Devis gratuit sur WhatsApp.",
     keywords: [
       "foncier Abidjan",
       "immobilier Songon",
