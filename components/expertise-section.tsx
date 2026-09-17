@@ -9,8 +9,8 @@ export function ExpertiseSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading
           eyebrow="Nos domaines d'expertise"
-          title="Trois pôles complémentaires, un seul interlocuteur"
-          description="Du terrain à la maison, FIC GROUP réunit les métiers du foncier, de l'immobilier et de la climatisation pour couvrir l'ensemble de votre projet."
+          title="Quatre pôles complémentaires, un seul interlocuteur"
+          description="Du terrain à la maison, FIC GROUP réunit les métiers du foncier, de l'immobilier, du BTP et de la climatisation pour couvrir l'ensemble de votre projet."
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">

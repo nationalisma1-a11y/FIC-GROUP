@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://fic-group.com/sitemap.xml
+Sitemap: https://fic-group.vercel.app/sitemap.xml

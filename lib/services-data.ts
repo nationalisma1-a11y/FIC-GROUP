@@ -1,4 +1,4 @@
-import { Landmark, Building2, Snowflake, type LucideIcon } from "lucide-react"
+import { Landmark, Building2, Snowflake, Hammer, type LucideIcon } from "lucide-react"
 
 export type Pole = {
   id: string
@@ -44,6 +44,7 @@ export const poles: Pole[] = [
     services: [
       "Vente et achat de terrains, immeubles et villas",
       "Construction et réhabilitation",
+      "BTP (gros œuvre, maçonnerie, BTCS)",
       "Gestion locative",
       "Relevé d'expertise",
       "Courtage en immobilier",
@@ -52,6 +53,17 @@ export const poles: Pole[] = [
     ],
     image: "/images/bien-construction-moderne.jpg",
     imageAlt: "Construction immobilière moderne",
+  },
+  {
+    id: "btp",
+    label: "BTP",
+    icon: Hammer,
+    tagline: "Construire avec rigueur",
+    description:
+      "Des travaux de gros œuvre, maçonnerie, BTCS et second œuvre réalisés avec méthode et exigence.",
+    services: ["Gros œuvre", "Maçonnerie", "BTCS", "Second œuvre"],
+    image: "/images/realisations/construction-btcs.jpg",
+    imageAlt: "Travaux de construction BTCS et maçonnerie",
   },
   {
     id: "climatisation",
